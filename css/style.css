@@ -155,7 +155,7 @@ nav{
 }
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
-    padding-inline: 10vw;
+    padding-inline: 12vw;
 }
 
 /* ----- FEATURED BOX ----- */
@@ -262,29 +262,9 @@ nav{
 @keyframes imgFloat {
     50% {
         transform: translateY(10px);
-        border-radius: 45% 55% 45% 55%;
+        border-radius: 50% 55% 50% 55%;
+        background-color: #AAA;
     }
-}
-.scroll-btn {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    translate: -50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    gap: 5px;
-    text-decoration: none;
-    color: var(--text-color-second);
-    background: var(--color-white);
-    border-radius: 30px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-
-.scroll-btn i {
-    font-size: 20px;
 }
 
 /* ----- MAIN BOX ----- */
@@ -328,14 +308,17 @@ h3 {
 }
 
 /* ----- ABOUT INFO ----- */
+#about{
+    margin-left: 8em;
+}
 .about-info {
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-block: 30px 70px;
-    padding-inline: 20px;
-    width: 100%;
+    padding-inline: 50px;
+    width: 65%;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
@@ -383,13 +366,42 @@ h3 {
     border-radius: 5px;
 }
 
+/* ----- EDUCATION BOX ----- */
+
+.col-4{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+}
+
+.col-4 h3 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+.edu-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 30px 70px;
+        padding-inline: 40px;
+        flex-wrap: wrap;
+}
+
+.edu-year {
+    font-size: 12px;
+}
+
 /* ----- PROJECTS BOX ----- */
 .project-container {
     display: flex;
-    width: 100%;
+    position: relative;
     justify-content: space-between;
-    gap: 20px;
     flex-wrap: wrap;
+   
 }
 
 .project-box {
@@ -400,47 +412,14 @@ h3 {
     flex-direction: column;
     width: 30%;
     height: 250px;
-    background: var(--color-white);
-    border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    overflow: hidden;
-}
-
-.project-box>i {
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
-
-.project-box label {
-    font-size: 15px;
-    color: #777;
-}
-
-.project-box::after,
-.contact-info::after {
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    background: var(--second-color);
-    width: 100%;
-    height: 100%;
     transition: .4s;
     z-index: 1;
 }
 
-.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after {
-    bottom: 0;
+.project-box img {
+    width: 85%;
+    margin-left:2em ;
 }
-
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label {
-    color: var(--color-white);
-    z-index: 2;
-}
-
 /* ----- CONTACT BOX ----- */
 .contact-info {
     position: relative;
@@ -578,7 +557,6 @@ footer {
     margin-top: 10px;
 }
 
-
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
     .featured-text {
@@ -685,21 +663,4 @@ footer {
         width: 80%;
     }
 }
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-@media only screen and (max-width: 540px) {
-    .featured-name {
-        font-size: 40px;
-    }
 
-    .project-box {
-        width: 100%;
-    }
-
-    .form-inputs {
-        flex-direction: column;
-    }
-
-    .input-field {
-        width: 100%;
-    }
-}
