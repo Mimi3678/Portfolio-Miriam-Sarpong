@@ -28,7 +28,7 @@ function myMenuFunction() {
 
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ["Designer","Youtuber","Developer"],
+      strings : ["Developer", "Designer"],
       loop : true,
       typeSpeed : 100, 
       backSpeed : 80,
@@ -49,7 +49,24 @@ function myMenuFunction() {
   sr.reveal('.featured-text-info',{delay: 200})
   sr.reveal('.featured-text-btn',{delay: 200})
   sr.reveal('.social_icons',{delay: 200})
-  sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.featured-image', { delay: 300 })
+  
+/* --- Featured box ----  */
+
+//Handling the hire me button when clicked
+    document.getElementById('hire-me-btn').addEventListener('click', function() {
+         window.location.href = '#contact';
+    });
+
+// Handle "Download CV" button click
+    document.getElementById('download-cv-btn').addEventListener('click', function() {
+        var pdfObject = document.getElementById('pdfObject');
+        if (pdfObject.style.display === 'none') {
+            pdfObject.style.display = 'block';
+        } else {
+            pdfObject.style.display = 'none';
+        }
+    });
 
   /* -- PROJECT BOX -- */
   sr.reveal('.project-box',{interval: 200})

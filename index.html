@@ -55,7 +55,9 @@
         </div>
         <div class="nav-button">
           <button class="btn">
-            Download CV <i class="uil uil-file-alt"></i>
+           <a href="documents/Miriam%20Sarpong%20-%20cvEN.docx%20(1).pdf" download="Miriam_Sarpong_CV.pdf">
+        Download CV <i class="uil uil-file-alt"></i>
+            </a>
           </button>
         </div>
         <div class="nav-menu-btn">
@@ -80,14 +82,25 @@
                 </p>
             </div>
             <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <button id="hire-me-btn" class="btn blue-btn">Hire Me</button>
+                <button id="download-cv-btn" class="btn">Download CV <i class="uil uil-file-alt"></i></button>
             </div>
+            <object id="pdfObject" data="documents/Miriam%20Sarpong%20-%20cvEN.docx%20(1).pdf" type="application/pdf" width="600" height="500" style="display: none;">
+                <p>Your browser does not support PDFs. <a href="documents/Miriam%20Sarpong%20-%20cvEN.docx%20(1).pdf">Download the PDF</a>.</p>
+            </object>
+
             <div class="social_icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+              <a href="https://github.com/Mimi3678">
+                  <div class="icon"><i class="uil uil-github-alt"></i></div>
+              </a>
+                <a href="https://www.linkedin.com/in/miriam-sarpong-353321220/" target="_blank">
+                    <div class="icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mim.idev?igsh=ZDk1Y3ZzN3FpMHJm&utm_source=qr">
+                  <div class="icon"><i class="uil uil-instagram"></i></div>
+              </a>
             </div>
           </div>
           <div class="featured-image">
@@ -104,15 +117,9 @@
           <div class="row">
             <div class="col">
                 <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
-                       frameworks and libraries,which allows me to implement interactive features.
-                       Additionally, I have experirence working with content management systems (CMS) like
-                       WordPress. 
+                    <h3>Biography</h3>
+                    <p>I am a dedicated and curious student who is eager to grow both personally and professionally. I always strive to do my best and enjoy learning new things. I see myself as responsible, positive, organized, and focused on finding solutions. I aim to be part of future technological advancements and help create innovative solutions for society. I am looking for an opportunity to use my skills and learn more. 
                     </p>
-                    <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
-                    </div>
                 </div>
             </div>
             <div class="col">
@@ -125,9 +132,7 @@
                         <span>CSS</span>
                         <span>Bootstrap</span>
                         <span>JavaScript</span>
-                        <span>Vue</span>
                         <span>React</span>
-                        <span>Angular</span>
                     </div>
                 </div>
                 <div class="skills-box">
@@ -135,10 +140,8 @@
                         <h3>Backend</h3>
                     </div>
                     <div class="skills-list">
-                        <span>PHP</span>
                         <span>JAVA</span>
                         <span>Python</span>
-                        <span>C++</span>
                     </div>
                 </div>
                 <div class="skills-box">
@@ -147,8 +150,15 @@
                     </div>
                     <div class="skills-list">
                         <span>MySQL</span>
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Other tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Canva</span>
+                        <span>Figma</span>
                     </div>
                 </div>
             </div>
@@ -166,16 +176,27 @@
                         <h3>Oslo Metropolitian University</h3>
                         <p class="edu-year">August 2021- June 2024</p>
                         <h4>Bachelor in Applied Computer Science</h4>
-                        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software, system, and application development.</p>
+                        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software development, testing and innovation. <br><br>Here are the mandatory courses I took: <em>Visualisering (Visualization), Databaser (Databases)
+          Webprogrammering (Web Programming), Menneske maskin interaksjon (Human-Computer Interaction)
+          Systemutvikling (System Development), Internet of Things, Testing av programvare (Software Testing)</em>
+
+          I also chose the programming track, where I had courses such as: <em>Algoritmer og datastrukturer (Algorithms and Data Structures)
+          Operativsystemer (Operating Systems), Datasikkerhet (Data Security)</em></p>
                     </div>
                     <div class="edu-box">
                         <h3>University - Queensland University of Technology </h3>
                         <p class="edu-year">July - November 2023</p>
-                        <p class="edu-desc">Specialization in Science Studies (Mathematics R2, Biology 1, Biology 2)</p>
+                        <h4>Exchange semester</h4>
+                        <p class="edu-desc">Spent a semester studying at QUT with these main courseworks: Data and
+        Web Analytics and Network Security. Besides these two, I also had two
+        choice subjects, Managing Social Media and Building IT Systems.
+          Read more here:<a class="exchangeLink" href="https://mimisdev.my.canva.site/mdev"> Exchange Semester - Australia</a></p>
                     </div>
                     <div class="edu-box">
-                        <h3>High School – Kristen Videregående skole Trøndelag</h3>
+                        <h3>Kristen Videregående skole Trøndelag</h3>
                         <p class="edu-year">August 2018 – June 2021</p>
+                        <h4>High School</h4>
+                        <p class="edu-desc">Study specialization within social studies.</p>
                     </div>
                 </div>
   </section>
@@ -211,6 +232,10 @@
                 <a class="projectLink" href="https://groupexaminclusivewebdesign.netlify.app/">Life
               as first year students</a>
             </div>
+            <div class="project-box">
+                <img src="images/personalwork/SchoolExamG.jpg" alt="">
+                <a class="projectLink" href="https://groupexaminclusivewebdesign.netlify.app/">Bachelor project - NORtritious</a>
+            </div>
           </div>
   </section>
 
@@ -223,9 +248,8 @@
           <div class="row">
              <div class="col">
                 <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
+                    <h2>Contact Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: miriamsarpong25@gmail.com</p>
                 </div>
              </div>
              <div class="col">
@@ -267,10 +291,17 @@
             </ul>
         </div>
         <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram"></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
+            <a href="https://github.com/Mimi3678">
+                  <div class="icon"><i class="uil uil-github-alt"></i></div>
+              </a>
+                <a href="https://www.linkedin.com/in/miriam-sarpong-353321220/" target="_blank">
+                    <div class="icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mim.idev?igsh=ZDk1Y3ZzN3FpMHJm&utm_source=qr">
+                  <div class="icon"><i class="uil uil-instagram"></i></div>
+              </a>
         </div>
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Miriam Sarpong</a></p>
