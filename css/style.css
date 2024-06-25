@@ -6,14 +6,14 @@
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
+    --text-color-second: #444444;
+    --text-color-third: #944bbb;
 
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
+    --first-color: #6910a8;
+    --first-color-hover: #a06cd5;
 
-    --second-color: rgb(0, 201, 255);
-    --third-color: rgb(192, 166, 49);
+    --second-color: #a06cd5;
+    --third-color: #a06cd5;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
@@ -203,6 +203,10 @@ color: var(--text-color-second);
 }
 
 .typedText {
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+.typedText2 {
     text-transform: capitalize;
     color: var(--text-color-third);
 }
@@ -438,12 +442,21 @@ h3 {
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
+    margin-left: 40px;
     width: 100%;
     height: 315px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+}
+
+#typed-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
 }
 
 .contact-info>h2 {
@@ -470,60 +483,8 @@ h3 {
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i {
-    color: #777;
+    color: #000000;
     z-index: 2;
-}
-
-/* ----- CONTACT FORM ----- */
-.form-control {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.form-inputs {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-}
-
-.input-field {
-    width: 50%;
-    height: 55px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding-inline: 20px;
-    outline: none;
-}
-
-textarea {
-    width: 100%;
-    height: 250px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding: 15px 20px;
-    outline: none;
-    resize: none;
-}
-
-.form-button>.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--second-color);
-    color: var(--color-white);
-}
-
-.form-button>.btn:hover {
-    background: #00B5E7;
-}
-
-.form-button i {
-    font-size: 18px;
-    rotate: -45deg;
 }
 
 /* ----- FOOTER BOX ----- */

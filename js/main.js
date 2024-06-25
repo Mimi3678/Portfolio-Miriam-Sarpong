@@ -35,6 +35,15 @@ function myMenuFunction() {
       backDelay : 2000
    })
 
+   /* ----- TYPING EFFECT 2----- */
+   var typingEffect = new Typed(".typedText2",{
+      strings : ["Developer", "Designer"],
+      loop : true,
+      typeSpeed : 100, 
+      backSpeed : 80,
+      backDelay : 2000
+   })
+
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
    const sr = ScrollReveal({
           origin: 'top',
