@@ -541,6 +541,51 @@ footer {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    /* Styles for screens 600px wide or less */
+
+    /* Education section*/
+    .col-4 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 1s;
+            border-radius: 15px;
+            background-color: #a06cd5;
+            width: 300px;
+            height: 320px;
+            text-align: center;
+            margin-left: 120px;
+            margin-right: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: inline-table;
+    
+        }
+    
+        .edu-box {
+            padding: 2px 16px;
+            border-radius: 5px 5px 0 0;
+        }
+        .about-info {
+        margin-right: 60px;
+        padding: 20px;
+        }
+        .skills-box{
+            margin-right: 50px;
+        }
+    
+/* reusable classes */
+.top-header, .top-header-about{
+    margin-right: 65px;
+    align-items: center;
+}
+
+.edu-box h3, .exchangeLink{
+    color: #ffff;
+}
+
+
+}
+
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button {
