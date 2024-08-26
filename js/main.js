@@ -64,7 +64,7 @@ sr.reveal('.featured-image', { delay: 300 })
 
 //Handling the hire me button when clicked
     document.getElementById('hire-me-btn').addEventListener('click', function() {
-         window.location.href = '#contact';
+         window.location.href = '#contact-info';
     });
 
 // Handle "Download CV" button click
