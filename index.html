@@ -13,11 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!----------------- FAVICON ------------------>
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"/>
 
     <title>Portfolio Miriam</title>
   </head>
@@ -166,56 +162,42 @@
 
   <section>
     <!-- -------------- EDUCATION BOX ---------------- -->
-          <div class="top-header">
-              <h1>Education</h1>
-          </div>
-          <section class="col-4">
-                    <div class="edu-box">
-                        <h3>Norwegian University of Science and Technology - NTNU</h3>
-                        <p class="edu-year">August 2024 - June 2026</p>
-                        <h4>Master´s degree in Informatics: Interaction Design, game & Learning Development</h4>
-                        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software development, testing and innovation.</p>
-                           <!-- <br><br>Here are the mandatory courses I took: <em>Visualisering (Visualization), Databaser (Databases)
-          Webprogrammering (Web Programming), Menneske maskin interaksjon (Human-Computer Interaction)
-          Systemutvikling (System Development), Internet of Things, Testing av programvare (Software Testing)</em>
+  <div class="top-header" id="education">
+    <h1>Education</h1>
+</div>
 
-          I also chose the programming track, where I had courses such as: <em>Algoritmer og datastrukturer (Algorithms and Data Structures)
-          Operativsystemer (Operating Systems), Datasikkerhet (Data Security)</em></p> -->
-                    </div>
-          </section>
-                <section class="col-4">
-                    <div class="edu-box">
-                        <h3>Oslo Metropolitian University</h3>
-                        <p class="edu-year">August 2021 - June 2024</p>
-                        <h4>Bachelor in Applied Computer Science</h4>
-                        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software development, testing and innovation.</p>
-                           <!-- <br><br>Here are the mandatory courses I took: <em>Visualisering (Visualization), Databaser (Databases)
-          Webprogrammering (Web Programming), Menneske maskin interaksjon (Human-Computer Interaction)
-          Systemutvikling (System Development), Internet of Things, Testing av programvare (Software Testing)</em>
+<section class="education-container">
+    <div class="edu-box">
+        <h3>Norwegian University of Science and Technology - NTNU</h3>
+        <p class="edu-year">August 2024 - June 2026</p>
+        <h4>Master´s degree in Informatics: Interaction Design, game & Learning Development</h4>
+        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software development, testing, and innovation.</p>
+        <button>Courses taken</button>
+    </div>
 
-          I also chose the programming track, where I had courses such as: <em>Algoritmer og datastrukturer (Algorithms and Data Structures)
-          Operativsystemer (Operating Systems), Datasikkerhet (Data Security)</em></p> -->
-                    </div>
-                    </section>
+    <div class="edu-box">
+        <h3>Oslo Metropolitian University</h3>
+        <p class="edu-year">August 2021 - June 2024</p>
+        <h4>Bachelor in Applied Computer Science</h4>
+        <p class="edu-desc">Broad and professionally oriented education, particularly focused on programming, software development, testing, and innovation.</p>
+        <button>Courses taken</button>
+    </div>
 
-                    <section class="col-4">
-                    <div class="edu-box">
-                        <h3>University - Queensland University of Technology </h3>
-                        <p class="edu-year">July - November 2023</p>
-                        <h4>Exchange semester</h4>
-                        <p class="edu-desc">Spent a semester studying at QUT with these main courseworks: Data and Web Analytics and Network Security. Besides these two, I also had two
-                            choice subjects, Managing Social Media and Building IT Systems. Read more here:<a class="exchangeLink" href="https://mimisdev.my.canva.site/mdev"> Exchange Semester - Australia</a></p>
-                    </div>
-                    </section>
+    <div class="edu-box">
+        <h3>University - Queensland University of Technology</h3>
+        <p class="edu-year">July - November 2023</p>
+        <h4>Exchange semester</h4>
+        <p class="edu-desc">Spent a semester studying at QUT with these main courseworks: Data and Web Analytics and Network Security. Besides these two, I also had two choice subjects, Managing Social Media and Building IT Systems.<br> Read more here: <a class="exchangeLink" href="https://mimisdev.my.canva.site/mdev">Exchange Semester - Australia</a></p>
+    </div>
 
-                    <section class="col-4">
-                    <div class="edu-box">
-                        <h3>Kristen Videregående skole Trøndelag</h3>
-                        <p class="edu-year">August 2018 – June 2021</p>
-                        <h4>High School</h4>
-                        <p class="edu-desc">Study specialization within social studies.</p>
-                    </div>
-                     </section>
+    <div class="edu-box">
+        <h3>Kristen Videregående skole Trøndelag</h3>
+        <p class="edu-year">August 2018 – June 2021</p>
+        <h4>High School</h4>
+        <p class="edu-desc">Study specialization within social studies.</p>
+    </div>
+</section>
+
 
  <!-- -------------- PROJECT BOX ---------------- -->
        <section class="section" id="projects">
@@ -224,10 +206,14 @@
           </div>
           <div class="project-container">
             <div class="project-box">
+                <img src="images/personalwork/233.png" alt="">
+                <a class="projectLink" href="https://vido.exchange/">International Welfare</a>
+                <a class="projectLink" href="https://vido.exchange/">Read more about this project</a>
+            </div>
+            <div class="project-box">
                 <img src="images/personalwork/vi.png" alt="">
                 <a class="projectLink" href="https://vido.exchange/">Vidoexchange</a>
-                <a class="projectLink" href="https://vido.exchange/">Read more about my Summer Internship</a>
-
+                <a class="projectLink" href="src/Pages/vido.html">Read more about my Summer Internship</a>
             </div>
             <div class="project-box">
                 <img src="images/personalwork/f.png" alt="">
@@ -259,7 +245,7 @@
        <section class="section" id="contact-info">
           <div class="top-header">
             <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
+            <span>Do you have a project in mind, contact me here</span>
           </div>
          <div class="row">
         <div class="col">

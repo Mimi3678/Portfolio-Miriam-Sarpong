@@ -382,40 +382,57 @@ h3 {
 
 /* ----- EDUCATION BOX ----- */
 
-.col-4{
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Adjust spacing between the boxes */
+    padding: 20px;
+    /* Add padding to the container */
 }
 
-.col-4 h3 {
-    font-size: 20px;
-    font-weight: 100;
-}
-
-
+/* Education Box */
 .edu-box {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        padding-block: 30px 70px;
-        padding-inline: 40px;
-        flex-wrap: wrap;
+    background-color: var(--color-white);
+    /* Optional: Add a background color for styling */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for depth */
+    flex: 1 1 calc(50% - 40px);
+    /* Adjust width, allowing two items per row */
+    margin: 20px 0;
+    /* Add some vertical margin */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edu-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color-third);
 }
 
 .edu-year {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.edu-desc {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* ----- PROJECTS BOX ----- */
 .project-container {
     display: flex;
-    position: relative;
-    justify-content: space-between;
     flex-wrap: wrap;
-   
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px 0;
 }
 
 .project-box {
@@ -427,7 +444,7 @@ h3 {
     width: 30%;
     height: 250px;
     transition: .4s;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .project-box img {
@@ -545,26 +562,10 @@ footer {
     /* Styles for screens 600px wide or less */
 
     /* Education section*/
-    .col-4 {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 1s;
-            border-radius: 15px;
-            background-color: #a06cd5;
-            width: 300px;
-            height: 320px;
-            text-align: center;
-            margin-left: 120px;
-            margin-right: auto;
-            margin-bottom: 20px;
-            padding: 20px;
-            display: inline-table;
-    
+    .edu-box {
+            flex: 1 1 100%;
         }
-    
-        .edu-box {
-            padding: 2px 16px;
-            border-radius: 5px 5px 0 0;
-        }
+
         .about-info {
         margin-right: 60px;
         padding: 20px;
@@ -579,8 +580,8 @@ footer {
     align-items: center;
 }
 
-.edu-box h3, .exchangeLink{
-    color: #ffff;
+.edu-box h3, .exchangeLink {
+    color: var(--text-color-third);
 }
 
 
